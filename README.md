@@ -1,36 +1,16 @@
-# 🧠 Context-Aware Conversational Assistant
+# ✂️ Code Snippets – Context-Aware Conversational Assistant
 
-## Overview
-An end-to-end intelligent assistant that automates interaction over a web interface using large language models.  
-It can track conversation context, auto-generate meaningful replies, detect action items (like date invitations), and maintain a real-time schedule to avoid conflicts.
+This folder contains real, production-used snippets from the intelligent assistant project. These samples illustrate how the system handles messaging, memory, and scheduling.
 
-This assistant is designed for seamless, human-like interactions across ongoing conversations—ideal for professional follow-ups, social planning, or customer engagement.
+## 📌 Snippets
 
-## Key Features
+### 1. `generate_reply.py`
+Uses the Gemini API to craft personalized replies based on prior conversation and user-defined instructions.
 
-- 🤖 **Contextual Chat Management**: Maintains separate memory files for each conversation
-- ✍️ **AI-Generated Replies**: Uses Gemini API to craft replies tailored to the other person’s style, background, and ongoing context
-- 📅 **Smart Scheduling**: Detects appointments within messages, extracts time/date/location, and prevents double-booking
-- 📬 **Email Alerts**: Automatically sends appointment details and conversation summaries to your inbox
-- 🔁 **Fully Automated Workflow**: Operates autonomously through scheduled checks, updates, and messaging
+### 2. `analyze_chat_for_meetup.py`
+Parses incoming messages to detect planned meetups and extract scheduling details using structured LLM prompts.
 
-## Technologies Used
-- Python
-- Selenium
-- Gemini API
-- JSON/Structured Storage
-- Email (SMTP)
-- Timezone-aware scheduling
+### 3. `save_message_to_json.py`
+Stores all messages with roles (user/model) to preserve context for future AI replies.
 
-## Example Use Case
-A user receives dozens of messages across different chats. This assistant:
-- Tracks all conversations
-- Auto-generates personalized replies using Gemini
-- Extracts commitments like “Let’s meet Friday at 8pm at Soho House”
-- Sends the details to their inbox
-- Ensures no overlapping appointments
-
-## Results
-- ⏱ Saved hours of repetitive messaging
-- 📅 Avoided double-bookings
-- 💬 Maintained high-quality, contextual conversation with 95% accuracy
+These examples reflect modular AI-driven automation, built for long-term use across conversations.
