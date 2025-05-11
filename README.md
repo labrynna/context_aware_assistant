@@ -10,7 +10,7 @@ Uses the Gemini API to craft personalized replies based on prior conversation an
 ### 2. `analyze_chat_for_meetup.py`
 Parses incoming messages to detect planned meetups and extract scheduling details using structured LLM prompts.
 
-### 3. `save_message_to_json.py`
+### 3. `update_chat_history.py`
 Stores all messages with roles (user/model) to preserve context for future AI replies.
 
 These examples reflect modular AI-driven automation, built for long-term use across conversations.
